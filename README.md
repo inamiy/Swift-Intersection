@@ -1,4 +1,4 @@
-# ExtensibleStruct
+# Swift-Intersection
 Extensible records / intersection type in Swift.
 
 ```swift
