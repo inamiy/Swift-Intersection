@@ -1,7 +1,7 @@
 import XCTest
-import ExtensibleStruct
+import Intersection
 
-final class ExtensibleStructTests: XCTestCase {
+final class IntersectionTests: XCTestCase {
     func testIntersection() {
         let intersection = Intersection(S1(1), S2(true))
         XCTAssertEqual(intersection.value1, 1)

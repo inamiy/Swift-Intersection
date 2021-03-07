@@ -1,7 +1,7 @@
 import XCTest
 
-import ExtensibleStructTests
+import IntersectionTests
 
 var tests = [XCTestCaseEntry]()
-tests += ExtensibleStructTests.allTests()
+tests += IntersectionTests.allTests()
 XCTMain(tests)
