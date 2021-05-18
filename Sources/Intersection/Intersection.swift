@@ -66,3 +66,8 @@ extension Intersection where Value2: IntersectionProtocol, Value2.Value2: Inters
 public typealias Intersection3<T1, T2, T3> = Intersection<T1, Intersection<T2, T3>>
 public typealias Intersection4<T1, T2, T3, T4> = Intersection3<T1, T2, Intersection<T3, T4>>
 public typealias Intersection5<T1, T2, T3, T4, T5> = Intersection4<T1, T2, T3, Intersection<T4, T5>>
+
+// MARK: - Equatable / Hashable
+
+extension Intersection: Equatable where Value1: Equatable, Value2: Equatable {}
+extension Intersection: Hashable where Value1: Hashable, Value2: Hashable {}
